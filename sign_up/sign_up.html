@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+
+
+<div class ="container">
+    <h2>Registration Form</h2>
+
+    <link rel="stylesheet" href="sign_up.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        
+    <form id = "myForm">
+
+        <div class="form-group">
+            <label>Username</label><br>
+            <input type="text" id="username" placeholder="Enter username">
+            <span id="usernameError" class="error"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Email</label><br>
+            <input type="email" id="email" placeholder="Enter email">
+            <span id="emailError" class="error"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Password</label><br>
+            <div class = "password-container">
+                <input  type="password" 
+                        id="password" 
+                        placeholder="Enter password">
+                
+                <i class="fa-solid fa-eye" id="togglePassword"></i>
+            </div>
+            <span id="passwordError" class="error"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Confirm Password</label><br>
+            <div class = "password-container">
+                <input  type="password" 
+                        id="confirmPassword" 
+                        placeholder="Confirm password">
+                
+                <i class="fa-solid fa-eye" id="toggleConfirmPassword"></i>
+            </div>
+            <span id="confirmPasswordError" class="error"></span>
+        </div>
+
+        <button class="submit-button" type="submit">Submit</button>
+
+        <p id="message" class="success"></p>
+
+    <div class = "login-link">
+        <span>Already have an account?</span>
+        <a href="../login/login.html">Login here</a>
+    </div>
+    
+    </form>
+    
+</div>
+
+
+
+<script src="sign_up.js"></script>
+
+</body>
+</html>
